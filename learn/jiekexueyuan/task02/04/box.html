@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>box</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		
+			.xiezi{
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+				overflow-y: auto; /*在需要时剪切内容并添加滚动条*/
+			}
+
+			.xiehe{
+				/*margin-left: 100px;*/
+				/*margin-top: 100px;*/
+				margin: 100px; /*简化以上两部，实现上 右 下 左 都是距离100px*/
+				padding: 10px;
+				width: 100px;
+				height: 100px;
+				background-color: aqua;
+				border: 5px solid red; /*边框5像素，红色实体线*/
+				box-shadow: 5px 5px 5px 5px rgba(0,0,0,.6); /*设置边框阴影*/
+			}
+
+			/*怪异的鞋子样式*/
+			.xiezi1{
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+			}
+			.xiehe1{
+				/*margin-left: 100px;*/
+				/*margin-top: 100px;*/
+				margin: 50px; /*简化以上两部，实现上 右 下 左 都是距离50px*/
+				margin-left: 100px; /*css样式可重写*/
+				padding: 10px;
+				width: 120px;
+				height: 120px;
+				background-color: aqua;
+				border: 5px solid red; /*边框5像素，红色实体线*/
+				box-sizing: border-box;  /*css3 新属性；通过将 box-sizing 设置为"border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。*/
+				box-shadow: 5px 5px 5px 10px rgba(0,0,0,.6);  /*设置边框阴影*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="xiehe">
+			<div class="xiezi">
+				鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子
+			</div>
+		</div>
+		<hr>
+		<!-- 怪异的盒模型 -->
+		<div class="xiehe1">
+			<div class="xiezi">
+				怪异的鞋子
+			</div>
+		</div>
+	</body>
+</html>

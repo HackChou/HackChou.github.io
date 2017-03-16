@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>后台界面</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/new.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="myheading">
+			<!--导航-->
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<div class="navbar-header">
+						<!--品牌图标-->
+						<a class="navbar-brand" href="">
+							<img src="images/w-logo-blue.png"/>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">会员管理</a></li>
+							<li><a href="#">内容管理</a></li>
+							<li><a href="#">系统分析</a></li>
+							<li class="dropdown">
+								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">系统维护<span class="caret"></span></a>
+								<!--下拉菜单里的内容-->
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="">恢复系统</a></li>
+									<li><a href="">系统备份</a></li>
+									<li><a href="">断开链接</a></li>
+									<li><a href="">删除用户</a></li>
+								</ul>
+							</li>
+						</ul>
+						<button type="button" class="btn btn-success navbar-btn navbar-right">Sign in</button>
+						<form action="" class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="输入搜索内容" />
+							</div>
+							<button type="submit" class="btn btn-default">搜索</button>
+						</form>
+					</div>
+				</div>			
+			</nav>
+		</div>
+		<!--主体部分-->
+		<div class="mybody container">
+			<!--使用栅格系统，可以规定左右内容的比例-->
+			<div class="row">
+				<!--左半部分。col-sm-5是指定在手机系统或是pad上的尺寸，占5格-->
+				<div class="leftmenu col-md-3 col-sm-5">
+					<!--左边是列表项-->
+					<div class="list-group">
+						<a href="" class="list-group-item list-group-item-info">访问统计</a>
+						<a href="" class="list-group-item">信息统计</a>
+						<a href="" class="list-group-item">日志统计</a>
+						<a href="" class="list-group-item">历史访问</a>
+						<a href="" class="list-group-item">个人中心</a>
+						<a href="" class="list-group-item">资料查询</a>
+						<a href="" class="list-group-item">公司概况</a>
+						<a href="" class="list-group-item">帮助日志</a>
+						<a href="" class="list-group-item">信息反馈</a>
+						<a href="" class="list-group-item">个人主页</a>
+						<a href="" class="list-group-item">历史消息</a>
+						<a href="" class="list-group-item">其他内容</a>
+					</div>
+				</div>
+				<!--右半边分-->
+				<div class="content col-md-9 col-sm-7">
+					<!--先放个层级关系，因为一般后台内容都很多。路径导航-->
+					<ol class="breadcrumb">
+						<li><a href="">极客学院后台</a></li>
+						<li><a href="">会员管理</a></li>
+						<li class="active">访问统计</a></li>
+					</ol>
+					<!--下面用表格表示内容.table-responsive表示table是响应式的-->
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>日期</th>
+									<th>访问量</th>
+									<th>热力图</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="">2017年1月9日</td>
+									<td class="">20000</td>
+									<td class=""><a href="">详情</a></td>
+								</tr>
+								<tr>
+									<td class="">2017年1月8日</td>
+									<td class="">20000</td>
+									<td class="warning"><a href="">详情</a></td>
+								</tr>
+								<tr>
+									<td class="">2017年1月7日</td>
+									<td class="">20000</td>
+									<td class=""><a href="">详情</a></td>
+								</tr>
+								<tr>
+									<td class="">2017年1月6日</td>
+									<td class="">20000</td>
+									<td class="info"><a href="">详情</a></td>
+								</tr>
+								<tr>
+									<td class="">2017年1月5日</td>
+									<td class="">20000</td>
+									<td class=""><a href="">详情</a></td>
+								</tr>
+								<tr>
+									<td class="">2017年1月4日</td>
+									<td class="">20000</td>
+									<td class="success"><a href="">详情</a></td>
+								</tr>
+								<tr>
+									<td class="">2017年1月3日</td>
+									<td class="">20000</td>
+									<td class=""><a href="">详情</a></td>
+								</tr>	
+								<tr>
+									<td class="">2017年1月2日</td>
+									<td class="">20000</td>
+									<td class="danger"><a href="">详情</a></td>
+								</tr>
+								<tr>
+									<td class="">2017年1月1日</td>
+									<td class="">20000</td>
+									<td class=""><a href="">详情</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<!--分页,pull-right表示它是靠右摆放的-->
+						<nav class="pull-right">
+							<ul class="pagination">
+								<li>
+									<a href="" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li>
+									<a href="" aria-label="Previous">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<!--脚部-->
+			<div class="myfooter">
+				<p>@极客学院：www.jikexueyuan.com</p>
+			</div>
+		</div>
+	</body>
+</html>

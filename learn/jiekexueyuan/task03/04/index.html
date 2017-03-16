@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div+css</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.header{
+			background-color: orange;
+			height: 150px;
+		}
+		.atricle{
+			background-color: green;
+			height: 300px;
+			/*方法一*/
+			/*padding-left: 150px;
+			padding-right: 100px;*/
+			overflow: hidden;
+
+		}
+		.footer{
+			background-color: yellow;
+			height: 150px;
+
+		}
+		
+		.atricle .left{
+			background-color: blue;
+			float: left;
+			color: #ffeb3b;
+			width: 150px;
+			margin-left: -100%;
+			/*方法一*/
+			/*position: relative;
+			left: -150px;*/
+			margin-bottom: -9999px;
+			padding-bottom: 9999px; 
+		}
+		.atricle .right{
+			background-color: #313312;
+			float: right;
+			width: 100px;
+			/*height: 16px;*/
+			margin-bottom: -9999px;
+			padding-bottom: 9999px; 
+			float: left;
+			margin-left: -100px;
+			/*方法一*/
+			/*position: relative;
+			right: -100px;*/
+		}
+		.atricle .middle{
+			background-color: #795548;
+			float: left;
+			width: 100%;
+			margin-bottom: -9999px;
+			padding-bottom: 9999px; 
+			
+		}
+		.inner{
+			margin-left: 150px;
+			margin-right: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		我是头
+	</div>
+	<div class="atricle">
+		<div class="middle">
+			<div class="inner">
+				我是中间
+				<p>我是中间</p>
+				<p>我是中间</p>
+				<p>我是中间</p>
+				<p>我是中间</p>
+				<p>我是中间</p>
+				<p>我是中间</p>
+				<p>我是中间</p>
+			</div>
+		</div>
+		<div class="left">
+			我是左
+		</div>
+			
+		<div class="right">
+			我是右
+		</div>
+	</div>
+	<div class="footer">
+		我是尾部 版权所有 ©
+	</div>
+</body>
+</html>

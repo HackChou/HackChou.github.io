@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>百度一下，你就知道</title>
+		<link rel="stylesheet" href="css/index.css" type="text/css">
+	</head>
+	<body>
+		<div id="wrapper">
+		<!--移动设备最上方的天气和登陆-->
+		<div id="mobile_header">
+			<div id="weather">
+				<div class="icon_cloudy"></div>
+				<div class="temperature">3°</div>
+				<div class="weather">
+					<div class="location">北京</div>
+					<div class="airquality">空气 257</div>
+				</div>
+				<div class="icon_down"></div>
+			</div>
+			<div id="login">
+				<div class="icon_login"></div>
+			</div>
+		</div>
+		
+		<!--中间的搜索框部分-->
+		<div id="search_form">
+			<div id="logo_holder">
+				<img id="logo" src="images/bd_logo1.png" />
+			</div>
+			<form action="#" id="form_holder">
+				<div id="input_holder">
+					<input id="sf_input" type="text" autofocus="autofocus" /></div><div id="button_holder">
+					<i id="ipt_rec"></i>
+				    <i id="dpi"></i>
+	   				<i id="soutu-btn"></i>
+					<input id="sf_btn" type="button" value="百度一下" />
+				</div>
+			</form>
+		</div>
+
+		<!--抬头的导航部分-->
+		<ul id="header">
+			<li><a href=""><span><strong>糯米</strong></span></a></li>
+			<li><a href=""><span><strong>新闻</strong></span></a></li>
+			<li><a href=""><span><strong>hao123</strong></span></a></li>
+			<li><a href=""><span><strong>地图</strong></span></a></li>
+			<li><a href=""><span><strong>视频</strong></span></a></li>
+			<li><a href=""><span>贴吧</span></a></li>
+			<li><a href=""><span>登录</span></a></li>
+			<li id="config">
+				<span>设置</span>
+				<div id="config_list">
+					<div>&nbsp</div>
+					<ul>
+						<li class="config_item">搜索设置</li>
+						<li class="config_item">高级搜索</li>
+						<li class="config_item">关闭预测</li>
+						<li class="config_item">搜索历史</li>
+					</ul>
+				</div>
+
+			</li>
+			<li><a href="" id="hd_morelink"><span id="hd_moretext">更多产品</span></a>
+				<div id="more">
+					<div id="nav_more_title">
+						<span>更多产品</span>
+					</div>
+					<div id="nav_more">
+						<ul>
+							<li><a href=""><div class="icon3"></div><span>音乐</span></a></li>
+							<li><a href=""><div class="icon4"></div><span>图片</span></a></li>
+							<li><a href=""><div class="icon2"></div><span>知道</span></a></li>
+							<li><a href=""><div class="icon5"></div><span>文库</span></a></li>
+							<li><a href=""><div class="icon6"></div><span>风云榜</span></a></li>
+							<li><a href=""><div class="icon7"></div><span>百度推广</span></a></li>
+							<li><a href=""><span id="allproduct_link">全部产品>></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+		<!--移动设备上的导航-->
+		<div id="mobile_nav">
+			<ul>
+				<li><a href=""><div class="icon_news"></div>新闻</a></li>
+				<li><a href=""><div class="icon_novel"></div>小说</a></li>
+				<li><a href=""><div class="icon_video"></div>视频</a></li>
+				<li><a href=""><div class="icon_lifeplus"></div>生活+</a></li>
+				<li><a href=""><div class="icon_map"></div>地图</a></li>
+				<li><a href=""><div class="icon_more_unfold"></div>更多</a></li>
+			</ul>
+		</div>
+
+		<!--常用网址-->
+		<div id="mobile_favoriteSite">
+			<div class="container">
+				<div class="title">
+					<span class="icon_nav"></span>
+					<span class="title_text"> 常用网址</span>
+					<span class="icon_more"></span>
+				</div>
+				<div class="Items">
+					<a href="" class="siteItem"><span class="note">贴吧</span></a>
+					<a href="" class="siteItem"><span>hao123</span></a>
+					<a href="" class="siteItem"><span>地图</span></a>
+					<a href="" class="siteItem"><span>百度VIP</span></a>
+					<a href="" class="siteItem"><span>图片</span></a>
+					<a href="" class="siteItem"><span>音乐</span></a>
+					<a href="" class="siteItem"><span class="note">糯米</span></a>
+					<a href="" class="siteItem"><div class="icon_addMore"></div></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--生活服务-->
+		<div id="mobile_service">
+			<div class="container">
+				<div class="title">
+					<span class="icon_service"> </span>
+					<span class="title_text"> 生活服务</span>
+					<span class="icon_more"></span>
+				</div>
+				<div class="location">
+					<div class="location_text">点击定位，查看附近位置信息</div>
+					<div class="btn_holder">
+						<a class="location_btn" href="">
+							<span class="icon_location"></span>
+							<span class="btn_text">定位</span>
+						</a>
+					</div>
+
+				</div>
+				<div class="Items">
+					<a href="" class="serviceItem"><div class="rndicon_movie"></div><span>电影</span></a>
+					<a href="" class="serviceItem"><div class="rndicon_nuomi"></div><span>团购</span></a>
+					<a href="" class="serviceItem"><div class="rndicon_takeaway"></div><span>外卖</span></a>
+					<a href="" class="serviceItem"><div class="rndicon_uber"></div><span>打车</span></a>
+					<a href="" class="serviceItem"><div class="rndicon_hotel"></div><span>酒店</span></a>
+					<a href="" class="serviceItem"><div class="rndicon_food"></div><span>美食</span></a>
+					<a href="" class="serviceItem"><div class="rndicon_ktv"></div><span>KTV</span></a>
+					<a href="" class="serviceItem"><div class="rndicon_bank"></div><span>银行</span></a>
+				</div>
+				<div class="showall">
+					<span class="showall_text">展示全部 <i class="icon_down"></i></span>
+				</div>
+			</div>
+		</div>
+		<!--管理我的首页-->
+	
+
+		<!-- 手机百度 -->
+		<div class="qrcodeCon">
+			<div id="qrcode">
+				<div class="qrcode-img">
+					<img src="images/zbios_efde696.png" alt="手机百度">
+				</div>
+				<div class="qrcode-text">
+					<p>
+						<b>手机百度</b>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--最下方的footer部分-->
+		<div id="footer">
+			<div id="footer_link">
+				<ul>
+					<li><a href="http://www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为主页</a></li>
+					<li><a href="http://home.baidu.com" target="_blank">关于百度</a></li>
+					<li><a href="http://ir.baidu.com" target="_blank">About Baidu</a></li>
+					<li><a href="http://e.baidu.com/?refer=888" target="_blank">百度推广</a></li>
+				</ul>
+			</div>
+			<div id="footer_copyright">
+				<span>©2016 Baidu</span>
+				<a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a> 
+				<a href="http://jianyi.baidu.com/"  target="_blank">意见反馈</a> 
+				<span>京ICP证030173号</span>
+				<i class="icrlogo"></i>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank">京公网安备11000002000001号</a>
+				<i class="jgwablogo"></i>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

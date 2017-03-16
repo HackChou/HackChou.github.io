@@ -1,0 +1,416 @@
+/*
+* @Author: ZHouYanWei
+* @Date:   2016-12-14 11:15:21
+* @Last Modified by:   ZHouYanWei
+* @Last Modified time: 2016-12-21 15:20:06
+*/
+
+
+/*页面初始化样式*/
+
+html {
+    overflow-y: auto;
+    /*overflow-y 属性让整个html页面如果溢出框，则应该提供滚动机制。*/
+}
+
+html,body {
+    height: 100%;
+}
+
+body,form {
+    position: relative;
+    /*相对定位*/
+}
+
+body,p,form,ul,li {
+    margin: 0;
+    /*外边距上下左右距离0*/
+    padding: 0;
+    /*内边距上下左右距离0*/
+    list-style: none;
+    /*列表样式无*/
+}
+
+body {
+    font: 12px arial;
+    /*字体*/
+    background-color: #ffffff;
+    /*背景颜色*/
+}
+a{
+    text-decoration: none;
+}
+
+/*顶部右侧样式开始*/
+
+.header {
+    width: 100%;
+    height: 64px;
+    color: #fff;
+    position: absolute;
+    /*绝对定位*/
+    right: 0;
+    top: 0;
+    margin: 0px 0 5px;
+    padding: 0 10px 0 0;
+}
+
+.header ul {
+    height: 64px;
+    float: right;
+     margin-top: 19px;
+    /*向右浮动*/
+}
+
+.header ul li {
+    float: left;
+    line-height: 24px;
+}
+
+.header ul li a {
+    float: left;
+    color: #333;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+
+.header ul li a:hover {
+    color: #00c;
+}
+
+.header ul li span.more {
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: #fff;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+}
+
+
+.bdbri {
+    width: 85px;
+    height: 720px;
+    border-left: 1px solid #e7e7e7;
+    position: absolute;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    text-align: center;
+    color: #666;
+    display: none;
+}
+
+.bdbrititle{
+    color: #333;
+    padding-top: 9px;
+    text-align: center;
+    width: 66px;
+    height: 43px;
+    line-height: 43px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    font-size: 13px;
+    cursor: default;
+}
+
+.bdbriwrapper{
+    text-align: center;
+    color: #666;
+}
+
+
+
+.bdbriimgitem_3{
+    width: 40px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../images/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -72px 0;
+}
+
+.bdbriimgitem_4{
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../images/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -112px 0;
+
+}
+.bdbriimgitem_2{
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../images/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -36px 0;
+}
+.bdbriimgitem_5{
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../images/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -148px 0;
+}
+.bdbriimgitem_6{
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../images/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+    background-position: -184px 0;
+}
+.bdbri .bdbriwrapper a {
+    display: block;
+    width: 85px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.header ul li .bdbri .bdbriwrapper a{
+    color: #666;
+    text-decoration: none;   
+}
+
+.header ul li .bdbri .bdbriwrapper a:hover{
+    color: #666;
+    text-decoration: underline;   
+}
+
+.header ul li .bdbri .bdbrievenmore{
+    
+    width: 85px;
+    height: 76px;
+    
+    
+}
+.header ul li .bdbri .bdbrievenmore a{
+    font-size: 12px;
+    margin-left: 9px;
+    color: #666;
+    text-decoration: none;
+    text-decoration: underline;   
+   
+}
+
+.header ul li span.more:hover .bdbri{
+    display: block;
+}
+
+/*顶部右侧样式结束*/
+
+
+/*logo 搜索样式开始*/
+
+#lg {
+    text-align: center;
+    /*百度logo居中*/
+    margin-bottom: 30px;
+}
+
+.logo {
+    height: 129px;
+    width: 270px;
+    margin-top: 50px;
+}
+
+.search {
+    background-color: #fff;
+    position: absolute;
+    left:25%;
+}
+
+.search-input {
+    padding: 2px 2px 2px 6px;
+    height: 34px;
+    width: 530px;
+    border: 1px solid #ccc;
+    outline: none;
+    float: left;
+}
+
+.search-input:focus {
+    border: 1px solid #3fb2f1;
+}
+
+.ipt_rec {
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 140px;
+    background: url("../images/ipt_rec.png");
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.ipt_rec:hover {
+    background-position: 0 18px;
+}
+
+.dpi{
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 126px;
+    background: url("../images/dpi.png");
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.soutu-btn {
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 110px;
+    background: url("../images/camera_new_679c15cc.png");
+    width: 18px;
+    height: 16px;
+    cursor: pointer;
+
+}
+
+.soutu-btn:hover {
+    background-position: 0 18px;
+}
+
+.search-btn {
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    background: #3388FF;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.search-btn:hover {
+    background: #3769f3;
+}
+/*logo 搜索样式结束*/
+
+
+/*手机百度样式开始*/
+
+.qrcodeCon {
+    text-align: center;
+    /*position: absolute;
+    bottom: 140px;
+    margin-bottom: 50px;*/
+    position: relative;
+    top: 180px;
+    height: 60px;
+    width: 100%;
+}
+
+#qrcode {
+    display: inline-block;
+}
+
+.qrcode-img {
+    width: 60px;
+    height: 60px;
+}
+
+.qrcode-text {
+    color: #999;
+    line-height: 23px;
+    margin: 3px 0 0 5px;
+}
+
+.qrcode-text p {
+    text-align: left;
+}
+
+.qrcode-text p b {
+    color: #666;
+    font-weight: 700;
+}
+
+
+/*手机百度样式结束*/
+
+
+/*底部版权样式开始*/
+
+.foot {
+    width: 100%;
+    /*position: absolute;
+    bottom: 100px;*/
+    position: relative;
+    top: 220px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link {
+    display: inline-block;
+    position: relative;
+    line-height: 22px;
+    top: -2px;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.link a {
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: underline;
+    color: #999;
+}
+
+.copyright {
+    text-align: center;
+    color: #999;
+}
+
+.icrlogo,
+.jgwablogo {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(../images/icons_5859e57.png) no-repeat;
+}
+
+.icrlogo {
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}
+
+.jgwablogo {
+    background-position: -623px -96px;
+    position: relative;
+    top: 3px;
+}
+/*底部版权样式结束*/

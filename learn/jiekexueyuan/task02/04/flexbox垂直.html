@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>flexbox</title>
+		<style type="text/css">
+			.con{
+				display:-webkit-flex;  /*分栏*/
+				flex-direction: column; /*垂直分栏*/
+				width: 600px;
+				height: 600px;
+				background-color: red;
+			}
+			.first{
+				-webkit-order: 3; /*排序3*/
+				height: 100px;
+				-webkit-flex: 1; /*1:1比例分栏*/
+				background-color: orange;
+			}
+			#second{
+				-webkit-order: 1;/*排序1*/
+				height: 100px;
+				-webkit-flex: 1;/*1:1比例分栏*/
+				background-color: green;
+			}
+			#three{
+				-webkit-order: 2;/*排序2*/
+				height: 300px;
+				-webkit-flex: 1;/*1:1比例分栏*/
+				background-color: #E3FF7F;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="con">
+			<div class="first">第一个</div>
+			<div id="second">第二个</div>
+			<div id="three">第三个</div>
+		</div>
+	</body>
+</html>

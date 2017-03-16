@@ -1,0 +1,32 @@
+/*
+* @Author: ZHouYanWei
+* @Date:   2017-02-03 20:03:55
+* @Last Modified by:   ZHouYanWei
+* @Last Modified time: 2017-02-20 23:09:50
+*/
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.container:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.container .img-holder {
+    float: left;
+    position: absolute;
+    display: inline-block;
+}
+
+.container .row-index {
+    width: 100%;
+    position: absolute;
+}
+
+.container .img-holder img {
+    height: 100%;
+}
